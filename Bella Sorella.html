@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bella Sorella | Premium Handbags & Leather Boots</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3ece0;--cream:#fbf8f2;--ink:#161210;--sand:#d8c6a8;--muted:#6d6357;--line:#ddd0bb;--gold:#a8864f;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171310;--cream:#201b17;--ink:#f3ece0;--sand:#4a3d2d;--muted:#b3a794;--line:#38302a;--gold:#c9a66b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171310;--cream:#201b17;--ink:#f3ece0;--sand:#4a3d2d;--muted:#b3a794;--line:#38302a;--gold:#c9a66b;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font:300 16px/1.7 Jost,system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;line-height:1.1}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{font:400 28px "Cormorant Garamond",serif;letter-spacing:.06em}
+nav{display:flex;gap:34px;font-size:14px;letter-spacing:.04em}
+nav a,.link{position:relative}
+nav a:after,.link:after{content:"";position:absolute;left:0;bottom:-3px;height:1px;width:0;background:var(--ink);transition:width .35s}
+nav a:hover:after,.link:hover:after{width:100%}
+.icons{display:flex;gap:6px;align-items:center}
+.ib{position:relative;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;transition:background .3s}
+.ib:hover{background:var(--sand)}
+.ib svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.4}
+.cnt{position:absolute;top:2px;right:0;background:var(--ink);color:var(--bg);font-size:10px;min-width:17px;height:17px;border-radius:9px;display:grid;place-items:center}
+#sbar{display:none;border-top:1px solid var(--line);padding:12px 0}
+#sbar.on{display:block}
+#sbar input{width:100%;border:0;border-bottom:1px solid var(--ink);background:transparent;font:300 20px "Cormorant Garamond",serif;padding:8px 0;color:var(--ink)}
+#sbar input:focus{outline:0}
+.hero{position:relative;min-height:calc(100vh - 68px);min-height:calc(100svh - 68px);display:grid;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 70% 40%,var(--cream),var(--bg) 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center;width:100%}
+.hero h1{font-size:clamp(64px,11vw,160px);font-weight:300;letter-spacing:-.01em;animation:rise 1.4s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 i{display:block;font-size:.62em;margin-left:.5em}
+.hero p{font:italic 300 clamp(22px,2.4vw,32px)/1.3 "Cormorant Garamond",serif;margin:24px 0 38px;color:var(--muted)}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:16px 42px;font-size:14px;letter-spacing:.12em;border:1px solid var(--ink);transition:background .35s,color .35s}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.o{background:transparent;color:var(--ink)}
+.btn.o:hover{background:var(--ink);color:var(--bg)}
+.still{position:relative;aspect-ratio:1/1.05;display:grid;place-items:center}
+.still .arch{position:absolute;inset:6% 8% 0;border-radius:999px 999px 0 0;background:linear-gradient(var(--sand),var(--cream))}
+.still svg{width:100%;display:block}
+.s1,.s2{position:absolute}
+.s1{width:62%;left:6%;top:14%;transform:rotate(-4deg);animation:float 7s ease-in-out infinite}
+.s2{width:50%;right:2%;bottom:6%;animation:float 8s ease-in-out -3s infinite}
+@keyframes float{50%{transform:translateY(-10px) rotate(-4deg)}}
+section{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:46px;gap:20px;flex-wrap:wrap}
+.head h2{font-size:clamp(36px,5vw,58px);font-weight:300}
+.head p{color:var(--muted);max-width:420px}
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cat{position:relative;aspect-ratio:4/4.6;background:var(--cream);overflow:hidden;display:block;text-align:left}
+.cat .bg{position:absolute;inset:0;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.cat:hover .bg{transform:scale(1.05)}
+.cat svg{width:58%;position:absolute;left:21%;top:12%}
+.cat div.t{position:absolute;left:0;right:0;bottom:0;padding:28px 32px;display:flex;justify-content:space-between;align-items:end;background:linear-gradient(transparent,color-mix(in srgb,var(--bg) 85%,transparent))}
+.cat h3{font-size:38px;font-weight:300}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px 22px}
+.card{position:relative;animation:rise .7s both}
+.pic{position:relative;aspect-ratio:4/5;background:var(--cream);display:grid;place-items:center;overflow:hidden;width:100%}
+.pic svg{width:72%;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.card:hover .pic svg{transform:scale(1.07)}
+.pic .badge{position:absolute;left:12px;top:12px;font-size:12px;background:var(--ink);color:var(--bg);padding:2px 12px}
+.wish{position:absolute;right:8px;top:8px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--bg) 80%,transparent)}
+.wish svg{width:18px;fill:none;stroke:currentColor;stroke-width:1.5;transition:transform .3s}
+.wish.on svg{fill:var(--ink)}
+.wish:hover svg{transform:scale(1.2)}
+.add{position:absolute;left:0;right:0;bottom:0;background:var(--ink);color:var(--bg);padding:13px;font-size:13px;letter-spacing:.1em;transform:translateY(101%);transition:transform .4s}
+.card:hover .add,.add:focus-visible{transform:none}
+@media (hover:none){.add{transform:none;position:static;width:100%;margin-top:8px}}
+.info{padding-top:14px;display:flex;justify-content:space-between;gap:10px}
+.info h3{font-size:22px}
+.info small{color:var(--muted);display:block;font-size:13px}
+.sw{display:flex;gap:5px;margin-top:6px}
+.sw i{width:11px;height:11px;border-radius:50%;border:1px solid var(--line)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;align-items:center}
+.chip{border:1px solid var(--line);padding:7px 20px;font-size:14px;transition:all .3s}
+.chip:hover{border-color:var(--ink)}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+select{background:var(--cream);color:var(--ink);border:1px solid var(--line);padding:8px 14px;font:inherit;margin-left:auto}
+.alt{background:var(--cream)}
+.alt .pic{background:var(--bg)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about h2{font-size:clamp(40px,5.5vw,70px);font-weight:300;margin-bottom:28px}
+.about p{margin-bottom:18px;color:var(--muted);max-width:520px}
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px;border-top:1px solid var(--line);padding-top:26px}
+.vals b{font:400 22px "Cormorant Garamond",serif;display:block}
+.vals span{font-size:14px;color:var(--muted);line-height:1.5;display:block}
+.abp{aspect-ratio:4/5;background:linear-gradient(160deg,var(--sand),var(--cream));display:grid;place-items:center;position:relative;border-radius:999px 999px 0 0}
+.abp svg{width:66%}
+.abp q{position:absolute;bottom:9%;left:0;right:0;text-align:center;font:italic 300 26px "Cormorant Garamond",serif;quotes:none}
+footer{background:var(--ink);color:#f3ece0;padding:80px 0 30px}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h4{font:400 22px "Cormorant Garamond",serif;margin-bottom:14px}
+footer li{list-style:none;font-size:14px;opacity:.78;margin-bottom:8px}
+footer ul{padding:0}
+footer .logo{font-size:36px;display:block;margin-bottom:12px}
+.fb{border-top:1px solid #3a322a;margin-top:50px;padding-top:22px;font-size:13px;opacity:.6}
+.ov{position:fixed;inset:0;background:rgba(15,11,8,.5);z-index:40;opacity:0;pointer-events:none;transition:opacity .35s}
+.ov.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--bg);z-index:50;transform:translateX(102%);transition:transform .45s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:20px 26px;border-bottom:1px solid var(--line)}
+.dh h3{font-size:30px}
+.db{flex:1;overflow:auto;padding:10px 26px}
+.row{display:grid;grid-template-columns:78px 1fr auto;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:center}
+.row .th{aspect-ratio:1;background:var(--cream);display:grid;place-items:center}
+.row .th svg{width:80%}
+.row h4{font:400 20px "Cormorant Garamond",serif}
+.row small{color:var(--muted);display:block;font-size:13px}
+.qty{display:inline-flex;border:1px solid var(--line);margin-top:6px;align-items:center}
+.qty button{width:30px;height:28px}
+.qty span{min-width:26px;text-align:center;font-size:14px}
+.df{padding:22px 26px;border-top:1px solid var(--line)}
+.df .tot{display:flex;justify-content:space-between;font:400 26px "Cormorant Garamond",serif;margin-bottom:14px}
+.df .btn{width:100%;text-align:center}
+.empty{padding:60px 0;text-align:center;color:var(--muted)}
+.modal{position:fixed;inset:3vh 0;margin:auto;width:min(1020px,94%);max-height:94vh;overflow:auto;background:var(--bg);z-index:50;opacity:0;pointer-events:none;transform:translateY(24px);transition:all .4s;height:fit-content}
+.modal.on{opacity:1;pointer-events:auto;transform:none}
+.x{position:absolute;right:14px;top:12px;z-index:2;font-size:30px;line-height:1;width:40px;height:40px}
+.pp{display:grid;grid-template-columns:1.05fr 1fr}
+.pp .pic{aspect-ratio:auto;min-height:520px;height:100%}
+.pp .pic svg{width:78%}
+.pd{padding:52px 44px}
+.pd h2{font-size:46px;font-weight:300}
+.price{font:400 28px "Cormorant Garamond",serif;margin:6px 0 16px}
+.stars{color:var(--gold);letter-spacing:2px}
+.opt{margin:20px 0 6px;font-size:14px;color:var(--muted)}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.dot{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);outline:1px solid transparent;outline-offset:3px}
+.dot.on{outline-color:var(--ink)}
+.sz{min-width:44px;height:40px;border:1px solid var(--line);padding:0 10px}
+.sz.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.acts{display:flex;gap:12px;margin:28px 0;flex-wrap:wrap}
+.acts .btn{flex:1;text-align:center;padding:16px 20px}
+.rev{border-top:1px solid var(--line);padding:30px 44px 44px}
+.rev h3{font-size:30px;margin-bottom:14px}
+.rv{padding:14px 0;border-bottom:1px solid var(--line)}
+.rv b{font-weight:500}
+.rf{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;margin-top:20px}
+input,textarea{background:var(--cream);border:1px solid var(--line);color:var(--ink);padding:12px 14px;font:inherit;width:100%}
+.rf textarea{grid-column:1/-1;min-height:70px}
+.ck{display:grid;gap:12px;padding:44px}
+.ck h2{font-size:40px;font-weight:300}
+.ck .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note{font-size:13px;color:var(--muted)}
+#toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,40px);background:var(--ink);color:var(--bg);padding:12px 28px;z-index:80;opacity:0;transition:all .4s;font-size:14px}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}.about,.pp{grid-template-columns:1fr}.about{gap:40px}.fg{grid-template-columns:1fr 1fr}.pp .pic{min-height:360px}.pd,.rev,.ck{padding:28px 22px}}
+@media(max-width:760px){nav{display:none}.hero .wrap{grid-template-columns:1fr}.still{max-width:420px;margin:0 auto;width:100%}section{padding:70px 0}.cats{grid-template-columns:1fr}.wrap{padding:0 18px}.vals{grid-template-columns:1fr}.rf,.ck .two{grid-template-columns:1fr}.select{margin-left:0}}
+@media(max-width:480px){.grid{gap:26px 12px}.info h3{font-size:18px}.info{flex-direction:column;gap:0}.fg{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="bar">
+<a href="#top" class="logo">Bella Sorella</a>
+<nav><a href="#shop">Shop</a><a href="#new">New Arrivals</a><a href="#best">Best Sellers</a><a href="#about">Our Story</a><a href="#contact">Contact</a></nav>
+<div class="icons">
+<button class="ib" id="bs" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+<button class="ib" id="bw" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11Z"/></svg><span class="cnt" id="wc">0</span></button>
+<button class="ib" id="bc" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="cnt" id="cc">0</span></button>
+</div></div>
+<div id="sbar"><input id="q" type="search" placeholder="Search bags, boots, colors" aria-label="Search products"></div></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div><h1>Bella<i>Sorella</i></h1><p>Elegance in Every Detail.</p><a class="btn" href="#shop">Shop Now</a></div>
+<div class="still"><div class="arch"></div><div class="s1" id="h1s"></div><div class="s2" id="h2s"></div></div>
+</div></div>
+
+<section><div class="wrap">
+<div class="head"><h2>Shop by category</h2><p>Two crafts, one signature: structured bags and boots cut from full-grain Italian leather.</p></div>
+<div class="cats">
+<button class="cat" data-cat="Handbags"><span class="bg" id="c1" style="background:linear-gradient(160deg,var(--sand),var(--cream))"></span><div class="t"><h3>Women’s Handbags</h3><span class="link">Explore</span></div></button>
+<button class="cat" data-cat="Boots"><span class="bg" id="c2" style="background:linear-gradient(200deg,var(--cream),var(--sand))"></span><div class="t"><h3>Women’s Leather Boots</h3><span class="link">Explore</span></div></button>
+</div></div></section>
+
+<section class="alt" id="new"><div class="wrap"><div class="head"><h2>New arrivals</h2><p>The season’s latest, finished by hand in small batches.</p></div><div class="grid" id="gnew"></div></div></section>
+
+<section id="shop"><div class="wrap"><div class="head"><h2>The collection</h2><p id="rc" class="note"></p></div>
+<div class="filters" id="fl">
+<button class="chip on" data-f="All">All</button><button class="chip" data-f="Handbags">Handbags</button><button class="chip" data-f="Boots">Boots</button>
+<span style="width:12px"></span>
+<button class="chip" data-c="Black">Black</button><button class="chip" data-c="Beige">Beige</button><button class="chip" data-c="Cognac">Cognac</button><button class="chip" data-c="Ivory">Ivory</button>
+<select id="so" aria-label="Sort"><option value="">Featured</option><option value="a">Price: low to high</option><option value="d">Price: high to low</option></select>
+</div><div class="grid" id="gall"></div></div></section>
+
+<section class="alt" id="best"><div class="wrap"><div class="head"><h2>Best sellers</h2><p>The pieces our clients return to, season after season.</p></div><div class="grid" id="gbest"></div></div></section>
+
+<section id="about"><div class="wrap about">
+<div><h2>Made for the woman she is becoming</h2>
+<p>Bella Sorella means beautiful sister. We began with a simple idea: that the things you carry and the shoes you walk in should feel like they were made for you, and only you.</p>
+<p>Every bag and boot is cut from full-grain Italian leather, stitched by artisans who have worked the same benches for decades, and finished with quiet details that age as gracefully as you do.</p>
+<p>No trends to chase. Just timeless shapes that give you the confidence to arrive as yourself.</p>
+<div class="vals"><div><b>Femininity</b><span>Soft lines, considered proportions.</span></div><div><b>Quality</b><span>Full-grain leather, hand-finished.</span></div><div><b>Confidence</b><span>Pieces that never ask for attention.</span></div></div></div>
+<div class="abp" id="abp"><q>Elegance in every detail.</q></div>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap"><div class="fg">
+<div><a class="logo" href="#top">Bella Sorella</a><p style="opacity:.75;max-width:300px;font-size:14px">Premium handbags and genuine leather boots, designed with Italian elegance.</p></div>
+<div><h4>Follow</h4><ul><li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></li><li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a></li></ul></div>
+<div><h4>Customer care</h4><ul><li>Shipping: free over $250, 2–5 days</li><li>Returns: 30 days, free exchanges</li><li>Care guide for leather</li><li>Size guide</li></ul></div>
+<div><h4>Contact</h4><ul><li>care@bellasorella.com</li><li>+39 055 000 1234</li><li>Mon–Sat, 9am–6pm</li></ul></div>
+</div><div class="fb">© 2026 Bella Sorella. All rights reserved.</div></div></footer>
+
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="dr" aria-label="Cart and wishlist"><div class="dh"><h3 id="dt">Your bag</h3><button class="x" style="position:static" id="dx" aria-label="Close">×</button></div><div class="db" id="dbd"></div><div class="df" id="dfo"></div></aside>
+<div class="modal" id="md" role="dialog" aria-modal="true"><button class="x" id="mx" aria-label="Close">×</button><div id="mb"></div></div>
+<div id="toast" role="status"></div>
+
+<script>
+var P=[
+{id:1,n:"Sorella Tote",c:"Handbags",p:690,t:["new","best"],col:[["Black","#1b1612"],["Beige","#cdb48f"],["Cognac","#9a5b30"]],d:"A structured everyday tote in full-grain calfskin with a suede-lined interior, a zip pocket and brushed gold hardware. Room for a laptop and a whole day."},
+{id:2,n:"Luna Crossbody",c:"Handbags",p:480,t:["new"],col:[["Ivory","#efe6d6"],["Black","#1b1612"],["Cognac","#9a5b30"]],d:"A compact crossbody with a sculpted flap and magnetic closure. The adjustable strap shifts from shoulder to hand in seconds."},
+{id:3,n:"Isabella Satchel",c:"Handbags",p:820,t:["best"],col:[["Beige","#cdb48f"],["Black","#1b1612"]],d:"Our signature top-handle satchel. Hand-stitched edges, a detachable strap and a lining that smells faintly of the workshop."},
+{id:4,n:"Contessa Clutch",c:"Handbags",p:360,t:["new","best"],col:[["Ivory","#efe6d6"],["Black","#1b1612"]],d:"A slim envelope clutch in smooth leather. Holds a phone, cards and lipstick, and goes from dinner to gallery without a change."},
+{id:5,n:"Firenze Ankle Boot",c:"Boots",p:560,t:["new","best"],col:[["Black","#1b1612"],["Cognac","#9a5b30"],["Beige","#cdb48f"]],d:"A sleek ankle boot with a 55mm stacked heel and an inner zip. Leather-lined, with a cushioned insole for all-day wear."},
+{id:6,n:"Milano Chelsea",c:"Boots",p:520,t:["best"],col:[["Black","#1b1612"],["Cognac","#9a5b30"]],d:"A refined Chelsea silhouette with elastic side gussets and a low block heel. Polished, comfortable and quietly confident."},
+{id:7,n:"Venezia Knee Boot",c:"Boots",p:740,t:["new"],col:[["Black","#1b1612"],["Beige","#cdb48f"]],d:"A knee-high boot in supple leather that follows the leg without wrinkling. Finished with a leather sole and a 60mm heel."},
+{id:8,n:"Capri Block Heel",c:"Boots",p:610,t:[],col:[["Ivory","#efe6d6"],["Cognac","#9a5b30"],["Black","#1b1612"]],d:"A pointed-toe boot on a stable block heel, in a lightly burnished finish that deepens over time."}];
+var R={1:[["Giulia","Beautiful leather and the lining is lovely. Worth every cent.",5],["Sara","Perfect size for work. I get compliments constantly.",5]],2:[["Nadia","Elegant and light. The strap is very comfortable.",5]],3:[["Layla","My favorite bag I have ever owned.",5],["Mona","Gorgeous color, excellent stitching.",4]],4:[["Hana","Tiny but fits everything I need for evenings.",5]],5:[["Dina","True to size and comfortable from day one.",5],["Rania","The leather feels luxurious.",5]],6:[["Salma","Sleek and easy to style with everything.",4]],7:[["Yasmin","They fit like they were made for me.",5]],8:[["Farah","Stable heel, beautiful shape.",5]]};
+var S={f:"All",c:"",q:"",so:"",cart:[],wish:[]};
+var $=function(i){return document.getElementById(i)};
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function bag(c,k){k=k||"#c9a66b";return '<svg viewBox="0 0 200 200"><path d="M66 74c0-40 68-40 68 0" fill="none" stroke="'+c+'" stroke-width="7" stroke-linecap="round"/><path d="M46 70h108l16 102c1 8-3 12-10 12H40c-7 0-11-4-10-12L46 70Z" fill="'+c+'"/><path d="M46 70h108l3 22H43l3-22Z" fill="#fff" fill-opacity=".12"/><path d="M43 92h114" stroke="#000" stroke-opacity=".18"/><rect x="92" y="84" width="16" height="16" rx="3" fill="'+k+'"/><ellipse cx="100" cy="190" rx="60" ry="4" fill="#000" fill-opacity=".1"/></svg>'}
+function boot(c,k){return '<svg viewBox="0 0 200 200"><path d="M62 22h52v82c0 12 10 18 26 24l36 14c8 3 12 9 12 18v18H52V22Z" fill="'+c+'"/><path d="M62 22h52v14H62z" fill="#fff" fill-opacity=".14"/><path d="M52 160h120v14H52z" fill="#000" fill-opacity=".28"/><rect x="52" y="174" width="30" height="16" fill="#000" fill-opacity=".5"/><path d="M62 60l-10 8M114 126c8 6 20 12 34 16" stroke="'+k+'" stroke-width="2.5" fill="none" opacity=".8"/><path d="M80 22v30" stroke="'+k+'" stroke-width="2.5" opacity=".7"/></svg>'}
+function art(p,i){var c=p.col[i||0][1];return p.c=="Boots"?boot(c):bag(c)}
+function $$(p){return "$"+p.toLocaleString("en-US")}
+function heart(){return '<svg viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11Z"/></svg>'}
+function stars(n){return "★★★★★".slice(0,n)+"☆☆☆☆☆".slice(0,5-n)}
+function avg(p){var r=R[p.id]||[];return r.length?r.reduce(function(a,x){return a+x[2]},0)/r.length:0}
+function card(p,i){var on=S.wish.indexOf(p.id)>-1;
+return '<article class="card" style="animation-delay:'+(i*60)+'ms"><div class="pic"><button data-open="'+p.id+'" style="position:absolute;inset:0;display:grid;place-items:center" aria-label="View '+p.n+'">'+art(p)+'</button>'+(p.t.indexOf("new")>-1?'<span class="badge">New</span>':'')+'<button class="wish'+(on?' on':'')+'" data-w="'+p.id+'" aria-label="Wishlist">'+heart()+'</button><button class="add" data-a="'+p.id+'">Add to Cart</button></div><div class="info"><div><h3>'+p.n+'</h3><small>'+p.c+'</small><div class="sw">'+p.col.map(function(c){return '<i style="background:'+c[1]+'"></i>'}).join("")+'</div></div><span class="serif" style="font-size:22px">'+$$(p.p)+'</span></div></article>'}
+function render(){
+$("gnew").innerHTML=P.filter(function(p){return p.t.indexOf("new")>-1}).slice(0,4).map(card).join("");
+$("gbest").innerHTML=P.filter(function(p){return p.t.indexOf("best")>-1}).slice(0,4).map(card).join("");
+var l=P.filter(function(p){var q=S.q.toLowerCase();return (S.f=="All"||p.c==S.f)&&(!S.c||p.col.some(function(c){return c[0]==S.c}))&&(!q||(p.n+" "+p.c+" "+p.d+" "+p.col.map(function(c){return c[0]}).join(" ")).toLowerCase().indexOf(q)>-1)});
+if(S.so)l.sort(function(a,b){return S.so=="a"?a.p-b.p:b.p-a.p});
+$("gall").innerHTML=l.length?l.map(card).join(""):'<p class="empty" style="grid-column:1/-1">No pieces match. Try clearing a filter or searching another word.</p>';
+$("rc").textContent=l.length+" pieces";
+$("wc").textContent=S.wish.length;$("cc").textContent=S.cart.reduce(function(a,x){return a+x.q},0);
+document.querySelectorAll("#fl .chip").forEach(function(b){b.classList.toggle("on",b.dataset.f?b.dataset.f==S.f:b.dataset.c==S.c)})}
+function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(function(){t.classList.remove("on")},2200)}
+function find(id){return P.filter(function(p){return p.id==id})[0]}
+function addCart(id,ci,sz,q){var p=find(id);ci=ci||0;sz=sz||(p.c=="Boots"?"38":"One size");
+var e=S.cart.filter(function(x){return x.id==id&&x.ci==ci&&x.sz==sz})[0];
+if(e)e.q+=q||1;else S.cart.push({id:id,ci:ci,sz:sz,q:q||1});render();toast(p.n+" added to your bag")}
+function total(){return S.cart.reduce(function(a,x){return a+find(x.id).p*x.q},0)}
+function drawer(mode){var d=$("dr");d.dataset.m=mode;$("dt").textContent=mode=="cart"?"Your bag":"Wishlist";var h="",f="";
+if(mode=="cart"){
+if(!S.cart.length)h='<p class="empty">Your bag is empty.<br>Find something you love in the collection.</p>';
+h=S.cart.map(function(x,i){var p=find(x.id);return '<div class="row"><div class="th">'+art(p,x.ci)+'</div><div><h4>'+p.n+'</h4><small>'+p.col[x.ci][0]+', '+x.sz+'</small><div class="qty"><button data-q="'+i+'|-1" aria-label="Fewer">−</button><span>'+x.q+'</span><button data-q="'+i+'|1" aria-label="More">+</button></div></div><div style="text-align:right"><div class="serif" style="font-size:20px">'+$$(p.p*x.q)+'</div><button class="link note" data-rm="'+i+'">Remove</button></div></div>'}).join("")||h;
+if(S.cart.length)f='<div class="tot"><span>Subtotal</span><span>'+$$(total())+'</span></div><p class="note" style="margin-bottom:12px">Shipping calculated at checkout. Free over $250.</p><button class="btn" id="go">Secure checkout</button>'}
+else{h=S.wish.map(function(id){var p=find(id);return '<div class="row"><div class="th">'+art(p)+'</div><div><h4>'+p.n+'</h4><small>'+$$(p.p)+'</small><button class="link note" data-open="'+id+'">View</button></div><div style="text-align:right"><button class="link note" data-a="'+id+'">Add to bag</button><br><button class="link note" data-w="'+id+'">Remove</button></div></div>'}).join("")||'<p class="empty">Your wishlist is empty.<br>Tap the heart on any piece to save it.</p>'}
+$("dbd").innerHTML=h;$("dfo").innerHTML=f;$("dfo").style.display=f?"":"none";d.classList.add("on");$("ov").classList.add("on")}
+function closeAll(){$("dr").classList.remove("on");$("md").classList.remove("on");$("ov").classList.remove("on")}
+function product(id){var p=find(id),ci=0,sz=p.c=="Boots"?"38":"One size";S.cur={id:id,ci:0,sz:sz,q:1};
+var sizes=p.c=="Boots"?["36","37","38","39","40","41"]:["One size"];
+var rs=(R[id]||[]);
+$("mb").innerHTML='<div class="pp"><div class="pic" id="mp">'+art(p)+'</div><div class="pd"><h2>'+p.n+'</h2><div class="price">'+$$(p.p)+'</div><div class="stars">'+stars(Math.round(avg(p)))+' <span class="note">('+rs.length+' reviews)</span></div><p style="margin-top:16px;color:var(--muted)">'+p.d+'</p><div class="opt">Color: <span id="cn">'+p.col[0][0]+'</span></div><div class="opts">'+p.col.map(function(c,i){return '<button class="dot'+(i?'':' on')+'" data-ci="'+i+'" style="background:'+c[1]+'" aria-label="'+c[0]+'"></button>'}).join("")+'</div><div class="opt">'+(p.c=="Boots"?"Size (EU)":"Size")+'</div><div class="opts">'+sizes.map(function(s,i){return '<button class="sz'+(s==sz?' on':'')+'" data-sz="'+s+'">'+s+'</button>'}).join("")+'</div><div class="acts"><button class="btn o" id="mc">Add to Cart</button><button class="btn" id="mbuy">Buy Now</button></div><p class="note">Free shipping over $250. 30-day returns. Genuine Italian leather.</p></div></div><div class="rev"><h3>Customer reviews</h3><div id="rl"></div><div class="rf"><input id="rn" placeholder="Your name" aria-label="Name"><select id="rs" style="margin:0" aria-label="Rating"><option value="5">5 stars</option><option value="4">4 stars</option><option value="3">3 stars</option><option value="2">2 stars</option><option value="1">1 star</option></select><button class="btn" id="rb" style="padding:12px 26px">Post review</button><textarea id="rt" placeholder="Share your experience" aria-label="Review"></textarea></div></div>';
+revs();$("md").classList.add("on");$("ov").classList.add("on");$("dr").classList.remove("on");$("md").scrollTop=0}
+function revs(){var id=S.cur.id;$("rl").innerHTML=(R[id]||[]).map(function(r){return '<div class="rv"><b>'+esc(r[0])+'</b> <span class="stars">'+stars(r[2])+'</span><p style="color:var(--muted)">'+esc(r[1])+'</p></div>'}).join("")||'<p class="note">No reviews yet. Be the first to write one.</p>'}
+function checkout(){closeAll();$("mb").innerHTML='<div class="ck"><h2>Secure checkout</h2><p class="note">This is a demo store: nothing is charged and no details are sent anywhere.</p><div class="two"><input placeholder="First name" aria-label="First name"><input placeholder="Last name" aria-label="Last name"></div><input type="email" placeholder="Email" aria-label="Email"><input placeholder="Shipping address" aria-label="Address"><div class="two"><input placeholder="City" aria-label="City"><input placeholder="Postal code" aria-label="Postal code"></div><input placeholder="Card number" inputmode="numeric" aria-label="Card number"><div class="two"><input placeholder="MM / YY" aria-label="Expiry"><input placeholder="CVC" aria-label="CVC"></div><div class="serif" style="font-size:26px;display:flex;justify-content:space-between"><span>Total</span><span>'+$$(total())+'</span></div><button class="btn" id="pay">Place order</button></div>';$("md").classList.add("on");$("ov").classList.add("on")}
+document.addEventListener("click",function(e){var t=e.target,b;
+if(b=t.closest("[data-open]")){product(+b.dataset.open);return}
+if(b=t.closest("[data-a]")){addCart(+b.dataset.a);return}
+if(b=t.closest("[data-w]")){var id=+b.dataset.w,i=S.wish.indexOf(id);if(i>-1)S.wish.splice(i,1);else{S.wish.push(id);toast("Saved to your wishlist")}render();if($("dr").classList.contains("on")&&$("dr").dataset.m=="wish")drawer("wish");return}
+if(b=t.closest("[data-q]")){var a=b.dataset.q.split("|"),x=S.cart[+a[0]];x.q+=+a[1];if(x.q<1)S.cart.splice(+a[0],1);render();drawer("cart");return}
+if(b=t.closest("[data-rm]")){S.cart.splice(+b.dataset.rm,1);render();drawer("cart");return}
+if(b=t.closest(".cat")){S.f=b.dataset.cat;S.c="";render();$("shop").scrollIntoView();return}
+if(b=t.closest("#fl .chip")){if(b.dataset.f){S.f=b.dataset.f}else{S.c=S.c==b.dataset.c?"":b.dataset.c}render();return}
+if(b=t.closest("[data-ci]")){S.cur.ci=+b.dataset.ci;var p=find(S.cur.id);document.querySelectorAll("[data-ci]").forEach(function(d){d.classList.toggle("on",d==b)});$("cn").textContent=p.col[S.cur.ci][0];$("mp").innerHTML=art(p,S.cur.ci);return}
+if(b=t.closest("[data-sz]")){S.cur.sz=b.dataset.sz;document.querySelectorAll("[data-sz]").forEach(function(d){d.classList.toggle("on",d==b)});return}
+var id=t.id||(t.closest("button")||{}).id;
+if(id=="mc"){addCart(S.cur.id,S.cur.ci,S.cur.sz,1)}
+else if(id=="mbuy"){addCart(S.cur.id,S.cur.ci,S.cur.sz,1);checkout()}
+else if(id=="go"){checkout()}
+else if(id=="pay"){S.cart=[];render();$("mb").innerHTML='<div class="ck" style="text-align:center;padding:90px 30px"><h2>Grazie mille.</h2><p style="color:var(--muted)">Your order is confirmed. A confirmation will arrive by email, and your pieces will be wrapped with care.</p><div><button class="btn" id="mx2" style="margin-top:20px">Continue shopping</button></div></div>'}
+else if(id=="mx2"||id=="mx"||id=="dx"||t.id=="ov"){closeAll()}
+else if(id=="rb"){var n=$("rn").value.trim(),tx=$("rt").value.trim();if(!n||!tx){toast("Add your name and a few words");return}(R[S.cur.id]=R[S.cur.id]||[]).unshift([n,tx,+$("rs").value]);revs();$("rn").value=$("rt").value="";toast("Thank you for your review")}
+else if(id=="bc")drawer("cart");else if(id=="bw")drawer("wish");
+else if(id=="bs"||t.closest("#bs")){$("sbar").classList.toggle("on");if($("sbar").classList.contains("on"))$("q").focus()}
+});
+$("q").addEventListener("input",function(e){S.q=e.target.value;render();if(S.q)$("shop").scrollIntoView()});
+$("so").addEventListener("change",function(e){S.so=e.target.value;render()});
+document.addEventListener("keydown",function(e){if(e.key=="Escape")closeAll()});
+$("h1s").innerHTML=bag("#1b1612");$("h2s").innerHTML=boot("#9a5b30");
+$("c1").innerHTML=bag("#1b1612");$("c2").innerHTML=boot("#1b1612");
+$("c1").firstChild.style.cssText=$("c2").firstChild.style.cssText="width:58%;position:absolute;left:21%;top:12%";
+$("abp").insertAdjacentHTML("afterbegin",bag("#cdb48f"));
+render();
+</script>
+</body>
+</html>
